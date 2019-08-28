@@ -1,0 +1,13 @@
+question 5
+A)
+Code
+mysql> SELECT chromosome, count(description LIKE '%breast cancer%') geneslinkedtoBC from gene group by chromosome order by geneslinkedtoBC desc limit 1;
+
+Answer
+Chromosome = 1
+geneslinkedtoBC = 2975
+B)
+code 
+mysql> select count(*) from  gene join transcript on gene.gene_id = transcript.gene_id where chromosome = 1;
+Answer
+17641
