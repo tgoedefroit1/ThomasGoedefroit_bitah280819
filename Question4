@@ -1,0 +1,7 @@
+Question4
+Code
+mysql> SELECT gene_name, seq_region_end-seq_region_start as size from gene order by size desc limit 1;
+
+Answer 
+gene_name: TMPRSS3
+Size: 5379013
