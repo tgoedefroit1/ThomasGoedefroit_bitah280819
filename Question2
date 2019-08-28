@@ -1,0 +1,11 @@
+unf. Doc.office (Pat_No, Pat_Name, Birthdate, (Pres_no, Meds, Dose, (Doc_No, Doc, Assist)))
+1NF Doc.office(Pat_No, Pat_Name, Birthdate )
+    Prescription (Pres_no, Meds, Dose, Doc_No)
+    DocInfo (Doc_No, Doc, Assist)
+
+2NF Doc.office(Pat_No, Pat_Name, Birthdate )
+    Prescription (Pres_no, Doc_No,Meds_ID)
+    Meds(Med_ID, Meds, Dose)
+    DocInfo (Doc_No, Doc, Assist)
+
+3NF=2NF
