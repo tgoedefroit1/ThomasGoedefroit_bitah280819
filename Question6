@@ -1,0 +1,2 @@
+Code
+db.bioing_mongo_examen.aggregate({$group{_id:"$method_of_admission",total:{$sum: "$drug"}}},{match{_id:["SPRAY;NASAL"]}})
